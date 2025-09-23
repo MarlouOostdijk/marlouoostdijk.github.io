@@ -1,0 +1,113 @@
+/* Basisstijl */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f8f8f8;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+header nav {
+    margin-top: 15px;
+}
+
+header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #0077cc;
+}
+
+/* Secties */
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Projecten grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-bottom: 20px;
+}
+
+.project img {
+    width: 100%;
+    display: block;
+}
+
+.project h3 {
+    margin: 15px;
+}
+
+.project p {
+    margin: 0 15px;
+    color: #555;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* Contact */
+#contact p {
+    text-align: center;
+    font-size: 18px;
+}
+
+#contact a {
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f8f8f8;
+    color: #777;
+    font-size: 14px;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+}
