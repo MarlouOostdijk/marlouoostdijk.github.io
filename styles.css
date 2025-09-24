@@ -55,6 +55,7 @@ header{
   backdrop-filter: blur(6px);
   box-shadow: 0 1px 0 var(--bar-border);
   color: var(--bar-ink);
+  padding: 0 20px;
 }
 .header-inner{
   display: grid;
@@ -214,3 +215,39 @@ footer{
   --ink:#37342B; --primary:#9F7556;
 }
 */
+
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Mobile menu */
+@media (max-width: 768px) {
+  header {
+    padding: 0 16px; /* iets minder padding op mobiel */
+  }
+  
+  header nav {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    background: var(--surface);
+    padding: 16px;
+    position: absolute;
+    top: 70px;
+    right: 16px;
+    left: 16px;
+    width: auto;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+  }
+
+  header nav.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
