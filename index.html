@@ -1,65 +1,111 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marlou Oostdijk - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marlou Oostdijk - Portfolio</title>
+
+  <!-- Webfonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+  <header>
+    <div class="container header-inner">
+      <div>
         <h1>Marlou Oostdijk</h1>
-        <p>Communication & Multimedia Design student</p>
-        <nav>
-            <a href="#about">Over mij</a>
-            <a href="#projects">Projecten</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+      </div>
+      <nav>
+        <a href="#about">Over mij</a>
+        <a href="#projects">Projecten</a>
+        <a class="btn" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container center">
+        <div class="eyebrow">Communication & Multimedia Design</div>
+        <h2 class="hero-title">Portfolio</h2>
+        <p class="lead">Korte tekst over wat je doet of wat er in je portfolio staat.</p>
+      </div>
+    </section>
 
     <section id="about">
-        <h2>Over mij</h2>
-        <p>
-            Welkom op mijn portfolio! Ik ben Marlou, [info]. Hieronder vind je een selectie 
-            van mijn projecten.
-        </p>
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Intro</div>
+          <h2>Over mij</h2>
+        </div>
+        <div class="about-card">
+          <p>Welkom op mijn portfolio! Ik ben Marlou, [info]. Hieronder vind je een selectie van mijn projecten.</p>
+        </div>
+      </div>
     </section>
 
     <section id="projects">
-        <h2>Projecten</h2>
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Werk</div>
+          <h2>Projecten</h2>
+        </div>
+
         <div class="projects-grid">
-            <div class="project">
-                <img src="https://placehold.co/400x250" alt="Project 1">
+          <div class="project">
+            <a class="project-link" href="project-template.html">
+              <img class="project-media" src="https://placehold.co/800x500" alt="Project 1">
+              <div class="project-body">
                 <h3>Project Titel 1</h3>
                 <p>Korte beschrijving van het project. Wat heb je gedaan, welke tools heb je gebruikt?</p>
-            </div>
+              </div>
+            </a>
+          </div>
 
-            <div class="project">
-                <img src="https://placehold.co/400x250" alt="Project 2">
+          <div class="project">
+            <a class="project-link" href="project-template.html">
+              <img class="project-media" src="https://placehold.co/800x500" alt="Project 2">
+              <div class="project-body">
                 <h3>Project Titel 2</h3>
                 <p>Korte beschrijving van het project. Dit kan ook een link naar een live demo bevatten.</p>
-            </div>
+              </div>
+            </a>
+          </div>
 
-            <div class="project">
-                <img src="https://placehold.co/400x250" alt="Project 3">
+          <div class="project">
+            <a class="project-link" href="project-template.html">
+              <img class="project-media" src="https://placehold.co/800x500" alt="Project 3">
+              <div class="project-body">
                 <h3>Project Titel 3</h3>
-                <p>Korte beschrijving van het project.</p>
-            </div>
+                <p>Korte beschrijving van het project. Dit kan ook een link naar een live demo bevatten.</p>
+              </div>
+            </a>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
-        <p>
-            Wil je samenwerken of meer weten over mijn werk? 
-            <br>
-            Stuur me gerust een mailtje via 
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Samenwerken</div>
+          <h2>Contact</h2>
+        </div>
+        <div class="contact-card">
+          <p>Wil je samenwerken of meer weten over mijn werk?</p>
+          <p class="mt-20">
+            Stuur gerust een mailtje via
             <a href="mailto:marlou.oostdijk@outlook.com">marlou.oostdijk@outlook.com</a>.
-        </p>
+          </p>
+        </div>
+      </div>
     </section>
+  </main>
 
-    <footer>
-        <p>&copy; 2025 Marlou Oostdijk</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Marlou Oostdijk</p>
+  </footer>
 </body>
 </html>
