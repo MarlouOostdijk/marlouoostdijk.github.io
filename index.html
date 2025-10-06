@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
@@ -31,7 +32,7 @@
       <div class="container center">
         <div class="eyebrow">Communication & Multimedia Design</div>
         <h2 class="hero-title">Portfolio</h2>
-        <p class="lead">Korte tekst over wat je doet of wat er in je portfolio staat.</p>
+        <p class="lead">Mijn portfolio als CMD‑student.</p>
       </div>
     </section>
 
@@ -42,7 +43,9 @@
           <h2>Over mij</h2>
         </div>
         <div class="about-card">
-          <p>Welkom op mijn portfolio! Ik ben Marlou, [info]. Hieronder vind je een selectie van mijn projecten.</p>
+          <p>Hoi, ik ben Marlou! Ik studeer Communicatie en Multimedia Design aan Avans in Den Bosch en zit in mijn laatste jaar. Mijn passie ligt bij design, conceptontwikkeling en alles wat met film en video te maken heeft. Daarom volg ik nu ook de minor Filmeducatie aan Fontys, waar ik me verdiep in film maken, analyseren en de geschiedenis van film.</p>
+          <p>Ik ben iemand die creativiteit graag combineert met een praktische aanpak: van een eerste idee tot een concreet resultaat. Het liefst werk ik aan projecten die verhalen vertellen en mensen raken, en ik wil me in de toekomst verder ontwikkelen in het maken van visuele concepten of video’s.</p>
+          <p>Buiten mijn studie ben ik vaak in of rond het zwembad te vinden: zelf trainen of trainingen geven aan tieners rond de 13 en 15 jaar oud. Daarnaast werk ik in een ijssalon en geniet ik van wandelen en gezellige avonden met vrienden met een lekkere cocktail erbij.</p>
         </div>
       </div>
     </section>
@@ -57,30 +60,30 @@
         <div class="projects-grid">
           <div class="project">
             <a class="project-link" href="project-template.html">
-              <img class="project-media" src="https://placehold.co/800x500" alt="Project 1">
+              <img class="project-media" src="img/trui-schippers-voorkant.png" alt="Project 1">
               <div class="project-body">
-                <h3>Project Titel 1</h3>
-                <p>Korte beschrijving van het project. Wat heb je gedaan, welke tools heb je gebruikt?</p>
+                <h3>Trui - The Schippers Group</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend sed in pharetra.</p>
               </div>
             </a>
           </div>
 
           <div class="project">
             <a class="project-link" href="project-template.html">
-              <img class="project-media" src="https://placehold.co/800x500" alt="Project 2">
+              <img class="project-media" src="img/brams-question.png" alt="Bram’s Questions">
               <div class="project-body">
-                <h3>Project Titel 2</h3>
-                <p>Korte beschrijving van het project. Dit kan ook een link naar een live demo bevatten.</p>
+                <h3>Bram’s Questions</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend sed in pharetra.</p>
               </div>
             </a>
           </div>
 
           <div class="project">
             <a class="project-link" href="project-template.html">
-              <img class="project-media" src="https://placehold.co/800x500" alt="Project 3">
+              <img class="project-media" src="img/kerstkaart.png" alt="Project 3">
               <div class="project-body">
-                <h3>Project Titel 3</h3>
-                <p>Korte beschrijving van het project. Dit kan ook een link naar een live demo bevatten.</p>
+                <h3>Kerstkaart - The Schippers Group</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend sed in pharetra.</p>
               </div>
             </a>
           </div>
@@ -95,11 +98,26 @@
           <h2>Contact</h2>
         </div>
         <div class="contact-card">
-          <p>Wil je samenwerken of meer weten over mijn werk?</p>
-          <p class="mt-20">
-            Stuur gerust een mailtje via
-            <a href="mailto:marlou.oostdijk@outlook.com">marlou.oostdijk@outlook.com</a>.
-          </p>
+          <p>Wil je samenwerken of meer weten over mijn werk? Vul dan het formulier hieronder in:</p>
+
+          <form action="https://formspree.io/f/mdkwdbep" method="POST" class="contact-form">
+            <div class="form-group">
+              <label for="name">Naam</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mailadres</label>
+              <input type="email" id="email" name="_replyto" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Bericht</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="submit">Verstuur bericht</button>
+          </form>
         </div>
       </div>
     </section>
@@ -108,14 +126,5 @@
   <footer>
     <p>&copy; 2025 Marlou Oostdijk</p>
   </footer>
-
-  <script>
-    const hamburger = document.querySelector(".hamburger");
-    const nav = document.querySelector("header nav");
-
-    hamburger.addEventListener("click", () => {
-      nav.classList.toggle("active");
-    });
-  </script>
 </body>
 </html>
