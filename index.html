@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marlou Oostdijk - Portfolio</title>
+
+  <!-- Webfonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <div>
+        <h1>Marlou Oostdijk</h1>
+      </div>
+      <nav>
+        <a href="#about">Over mij</a>
+        <a href="#projects">Projecten</a>
+        <a class="btn" href="#contact">Contact</a>
+      </nav>
+      <div class="hamburger">☰</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container center">
+        <div class="eyebrow">Communication & Multimedia Design</div>
+        <h2 class="hero-title">Portfolio</h2>
+        <p class="lead">Mijn portfolio als CMD‑student.</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Intro</div>
+          <h2>Over mij</h2>
+        </div>
+        <div class="about-card">
+          <p>Hoi, ik ben Marlou! Ik studeer Communicatie en Multimedia Design aan Avans in Den Bosch en zit in mijn laatste jaar. Mijn passie ligt bij design, conceptontwikkeling en alles wat met film en video te maken heeft. Daarom volg ik nu ook de minor Filmeducatie aan Fontys, waar ik me verdiep in film maken, analyseren en de geschiedenis van film.</p>
+          <p>Ik ben iemand die creativiteit graag combineert met een praktische aanpak: van een eerste idee tot een concreet resultaat. Het liefst werk ik aan projecten die verhalen vertellen en mensen raken, en ik wil me in de toekomst verder ontwikkelen in het maken van visuele concepten of video’s.</p>
+          <p>Buiten mijn studie ben ik vaak in of rond het zwembad te vinden: zelf trainen of trainingen geven aan tieners rond de 13 en 15 jaar oud. Daarnaast werk ik in een ijssalon en geniet ik van wandelen en gezellige avonden met vrienden met een lekkere cocktail erbij.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Werk</div>
+          <h2>Projecten</h2>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project">
+            <a class="project-link" href="project-template.html">
+              <img class="project-media" src="trui-schippers-voorkant.png" alt="Project 1">
+              <div class="project-body">
+                <h3>Trui - The Schippers Group</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend sed in pharetra.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="project">
+            <a class="project-link" href="project-template.html">
+              <img class="project-media" src="brams-question.png" alt="Bram’s Questions">
+              <div class="project-body">
+                <h3>Bram’s Questions</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend sed in pharetra.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="project">
+            <a class="project-link" href="project-template.html">
+              <img class="project-media" src="kerstkaart.png" alt="Project 3">
+              <div class="project-body">
+                <h3>Kerstkaart - The Schippers Group</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend sed in pharetra.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Samenwerken</div>
+          <h2>Contact</h2>
+        </div>
+        <div class="contact-card">
+          <p>Wil je samenwerken of meer weten over mijn werk? Vul dan het formulier hieronder in:</p>
+
+          <form action="https://formspree.io/f/mdkwdbep" method="POST" class="contact-form">
+            <div class="form-group">
+              <label for="name">Naam</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mailadres</label>
+              <input type="email" id="email" name="_replyto" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Bericht</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="submit">Verstuur bericht</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Marlou Oostdijk</p>
+  </footer>
+</body>
+</html>
