@@ -167,39 +167,61 @@ section h2 { font-size: clamp(28px, 3vw, 36px); }
 /* ------------------------------------ */
 /* 👤 About Card */
 /* ------------------------------------ */
-.about-card {
+/* About flex layout voor tekst + afbeelding */
+.about-flex {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 28px;
   background: var(--surface);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
-  padding: 28px;
-  max-width: 100vw;
-  margin: 0 auto;
   border: 1px solid color-mix(in oklab, var(--muted), white 40%);
+  flex-wrap: wrap; /* Zorgt dat het mobiel netjes onder elkaar komt */
 }
 
-/* About Grid voor tekst + afbeelding */
-.about-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-  margin-top: 40px;
+/* Tekst gedeelte */
+.about-text {
+  flex: 1 1 300px; /* groeit mee maar minimaal 300px */
+  margin-right: 150px;
 }
 
-/* Zorg dat de cards altijd even hoog zijn */
-.about-grid > .about-card {
+/* Afbeelding container */
+.about-image-container {
+  flex: 0 0 250px; /* max breedte van de afbeelding */
   display: flex;
-  flex-direction: column;
-  justify-content: stretch;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Afbeelding netjes vullen en responsief */
-.about-card img.about-image {
+/* Afbeelding verticaal ovaal */
+.about-image {
   width: 100%;
-  height: 100%;
+  height: auto;
+  border-radius: 50% / 60%; /* verticaal ovaal */
   object-fit: cover;
-  border-radius: var(--radius-lg);
   display: block;
 }
+
+/* Mobiel: afbeelding boven tekst */
+@media (max-width: 600px) {
+  .about-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image-container {
+    flex: 0 0 auto;
+    width: 70%; /* iets kleiner op mobiel */
+    margin: 0 auto 20px auto;
+  }
+
+  /* Tekst gedeelte */
+  .about-text {
+    margin-right: 0px;
+  }
+}
+
 
 /* ------------------------------------ */
 /* 💼 Projects */
